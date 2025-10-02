@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+
+.container .blood-bank-name a.bank-name {
+    color: #994d51;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Cardo", serif;
+}
+
+.navbar {
+    background-color: #f3e7e8;
+}
+
+.navbar.navbar-light .navbar-brand {
+    color: #994d51;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.container .nav-item .nav-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    font-family: "Lexend Deca", sans-serif;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.container .nav-item .nav-link:hover {
+    color: #994d51;
+    text-decoration: underline;
+    text-decoration-color: #994d51;
+}
+
+
+.container .main-h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    text-decoration: none;
+}
+.container .main-h2 h2{
+    font-size: 27px;
+    font-weight: 600;
+    font-family: "Cardo";
+    margin: 0;
+    text-decoration: none;
+    color: #000;
+    text-transform: capitalize;
+}
+@media (min-width:992px) {
+    .navbar>.container {
+        gap: 20px;
+    }
+
+    .container .nav-item .nav-link:hover {
+        color: #994d51;
+        transform: scale(1.2);
+        text-decoration: underline;
+        text-decoration-color: #994d51;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: end;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .container .blood-bank-name a.bank-name {
+        color: #994d51;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: "Cardo", serif;
+    }
+}

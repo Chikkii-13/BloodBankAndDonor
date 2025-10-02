@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+/* Reset & Background */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Lexend Deca", sans-serif;
+    overflow-x: hidden;
+    background-image: url(//localhost/bloodbankphp/images/signup-bg.jpg) !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Container Styles */
+.container {
+    max-width: 600px;
+    padding: 0;
+    padding: 20px 30px 30px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.container h3 {
+    font-size: 30px;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.container label {
+    font-size: 18px;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+
+.container .form-control {
+    width: 100%;
+    border-radius: 5px;
+    height: 50px;
+    margin-bottom: 21px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../images/your-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid antiquewhite;
+    font-family: "Lexend Deca", sans-serif;
+    color: #994d51;
+    border: 1px solid #994d51;
+    padding: 0 10px;
+}
+
+.container .form-control::placeholder,
+.container .placeholder {
+    font-size: 14px;
+    font-weight: 600;
+    color: #994d51;
+    font-family: "Lexend Deca", sans-serif;
+    text-transform: capitalize;
+}
+
+.container .common .form-control {
+    margin-bottom: 0;
+}
+
+.container .small-text {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 12px;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+
+/* Button Styles */
+.btn-close {
+    position: absolute;
+    right: 0;
+    margin-right: 27px;
+    color: black;
+    width: 19px;
+    height: 19px;
+}
+
+.container .btn {
+    width: 100%;
+    height: 50px;
+    background: #e92932;
+    border-radius: 5px;
+    border: none;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(153, 77, 81, 0.4);
+    transition: all 0.3s ease;
+}
+
+.container .btn:hover {
+    background-color: #803b3f;
+    box-shadow: 0 6px 12px rgba(153, 77, 81, 0.5);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(153, 77, 81, 0.3);
+}
+
+/* Login Link */
+.container a.login-div {
+    color: #994d51;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Lexend Deca", sans-serif;
+    display: block;
+    text-decoration: none;
+}
+
+.container a.login-div:hover {
+    text-decoration: underline #994d51;
+
+}
+
+/* Responsive Design */
+@media screen and (max-width:1199px) {
+    .container.signup .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .container a.login-div {
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        text-decoration: underline #994d51;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .container {
+        max-width: 600px;
+        margin-top: 20px;
+    }
+
+    .container label {
+        font-size: 15px;
+    }
+
+    body .alert {
+        font-size: 14px;
+    }
+
+    .alert-dismissible .btn-close {
+        margin-right: 10px;
+        padding-right: 0;
+        background-size: 19px;
+    }
+
+    .container .form-control {
+        width: 100%;
+    }
+
+    .container .btn {
+        width: 100%;
+    }
+
+    .container h3 {
+        font-size: 20px;
+        margin-top: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #994d51;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    .container,
+    #login .container {
+        max-width: 100%;
+        padding: 30px 20px 20px;
+    }
+
+    .bg-wrapper {
+        padding: 0 15px;
+    }
+}
+
+body .alert {
+    max-width: 100%;
+    min-height: 60px;
+    margin: 10px auto;
+    margin-bottom: 0;
+}
+
+body .btn-close {
+    background-size: 25px;
+}
+
+/* Login Styles start */
+@media screen and (min-width:767px) {
+    #login .container {
+        max-width: 500px;
+    }
+
+    .container:hover {
+        box-shadow: 0 14px 32px rgba(153, 77, 81, 0.2);
+    }
+
+}
+
+#login .container h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#login .container {
+    width: 500px;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(14px);
+    border-radius: 20px;
+    padding: 40px 28px;
+    box-shadow: 0 12px 28px rgba(153, 77, 81, 0.15);
+    transition: all 0.3s ease;
+    margin: 0 auto;
+
+}
+
+
+
+/* Heading */
+.login-heading {
+    font-size: 28px;
+    font-weight: 700;
+    color: #994d51;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Labels */
+.login-form label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #4e2d2e;
+}
+
+/* Inputs */
+.login-form .form-control {
+    height: 45px;
+    border-radius: 8px;
+    border: 1px solid #f3c7c9;
+    background-color: #fdf7f7;
+    padding: 10px 12px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #3a2c2c;
+}
+
+.login-form .form-control::placeholder {
+    color: #994d51;
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+/* Button */
+.login-btn {
+    width: 100%;
+    height: 45px;
+    background-color: #e92932;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background-color: #b52329;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(153, 77, 81, 0.3);
+}
+
+/* Link to signup */
+.login-link {
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+    color: #994d51;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.login-link:hover {
+    color: #803b3f;
+    text-decoration: underline;
+}
+
+/* Alerts */
+.alert {
+    max-width: 420px;
+    margin: 10px auto;
+}
+
+
+/* Login Styles end */

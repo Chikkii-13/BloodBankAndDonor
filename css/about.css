@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Hero Section */
+.hero {
+    background-image:url("https://lh3.googleusercontent.com/aida-public/AB6AXuCdKs4CkA4Rc6SKY5QLpD3EhKcEOQmJYuakP7TxIi8yHOPe9lWcpBKWrWHTeuvaS2bpvA8AA6mq0w7iqZildmAsI_miumalHz4gAkRiTqyzxi65-raAm9aiDqR7KwGmjT3WZUyAGHmxEZ82iTV-mmthYO3PPFfCkLcSZ4ADCsSolsfhm6gXpyDkJWTEQTbPpuXC2XbQk12xmDHk4ASB7Rd5D359Ho5SBTXDzlnqxoWJM2PqadzyZkZlvAfM5zS1EejQXoUPqV6JO7I");
+    color: #994d51;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 20px;
+    padding-top: 60px;
+}
+.hero-content{
+    background:rgba(255,255,255,0.85);
+    width:500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+.hero h1 {
+    font-size:40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* About Container */
+.about-container.container{
+    max-width: 1000px !important;
+    margin: -60px auto 50px auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* About Sections */
+.about-section {
+    margin-bottom: 50px;
+}
+
+.about-section h2 {
+    color: #994d51;
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #994d51;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.about-section ul {
+    list-style: disc;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.about-section ul li {
+    margin-bottom: 10px;
+}
+
+/* Flex Section (Mission & Vision) */
+.flex-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.mission-vision {
+    flex: 1;
+    min-width: 320px;
+    background-color: #f9f2f2;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.mission-vision h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.mission-vision p,.mission-vision ul li {
+    font-size: 16px;
+    line-height: 25px;
+
+}
+
+/* Core Values (Flex + Grid Cards) */
+.core-values {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.core-card {
+    flex: 1 1 200px;
+    min-width: 200px;
+    background-color: #fdf0f0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s;
+}
+
+.core-card:hover {
+    transform: translateY(-5px);
+}
+
+.core-card h3 {
+    font-size: 18px;
+    color: #994d51;
+    margin-bottom: 10px;
+}
+
+.core-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Team Section */
+.team-section {
+    margin-bottom: 50px;
+}
+
+.team-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.team-member {
+    flex: 1 1 200px;
+    max-width: 220px;
+    text-align: center;
+    background-color: #f9f2f2;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-member i {
+    color: #994d51;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    color: #994d51;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .flex-section {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-container {
+        padding: 20px;
+    }
+
+    .core-card,
+    .team-member {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+@media screen and (max-width:767px) {
+    .hero-content{
+        width: 100%;
+    }
+    .mission-vision{
+        min-width: 100%;
+    }
+    .about-container.container{
+        padding: 30px 20px 20px;
+    }
+    .about-section ul{
+        padding-left: 0;
+    }
+}

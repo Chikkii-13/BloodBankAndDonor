@@ -1,0 +1,20 @@
+.container-custom {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+h2 {
+    text-align: center;
+    color: #b71c1c;
+    margin-bottom: 20px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+    text-align: center;
+}

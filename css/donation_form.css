@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    background: linear-gradient(135deg, #fbe9e9, #f9f4f4);
+    margin: 0;
+    padding: 0;
+}
+
+.donation-container {
+    max-width: 600px;
+    margin: 60px auto;
+}
+
+.donation-card {
+    border-radius: 15px;
+    background: #fff;
+    border: none;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.donation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.form-title {
+    font-weight: 700;
+    color: #b23a48;
+    font-size: 26px;
+}
+
+.donation-form .form-group {
+    margin-bottom: 18px;
+}
+
+.donation-form label {
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.donation-form input,
+.donation-form select {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.donation-form input:focus,
+.donation-form select:focus {
+    border-color: #b23a48;
+    box-shadow: 0 0 8px rgba(178, 58, 72, 0.2);
+}
+
+.btn-donate {
+    background: linear-gradient(135deg, #b23a48, #7a3a42);
+    color: #fff;
+    font-weight: 600;
+    padding: 14px;
+    font-size: 17px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-donate:hover {
+    background: linear-gradient(135deg, #7a3a42, #5c2d34);
+    transform: scale(1.02);
+}

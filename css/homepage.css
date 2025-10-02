@@ -1,0 +1,224 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    background: #fff;
+    color: #333;
+    line-height: 1.5;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(//localhost/bloodbankphp/images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 80px 20px;
+    min-height: 385px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 1.2px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.btn-primary,
+.blood-btn {
+    background-color: white;
+    color: #994d51;
+    padding: 14px 36px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 2px solid white;
+}
+
+.about-blood-btn {
+    background-color: #994d51;
+    color: white;
+    padding: 14px 36px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 17px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 2px solid #994d51;
+    width: 268px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.blood-btn:hover,
+.blood-btn:focus {
+    background-color: #7e3f43;
+    color: white;
+    border-color: #7e3f43;
+    outline: none;
+}
+
+/* Brand Window */
+.brand-window {
+    padding: 60px 20px 80px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.brand-window h1 {
+    font-size: 35px;
+    color: #994d51;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+/* Blood Groups Grid */
+.blood-groups-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 25px;
+}
+
+.blood-group-btn {
+    background: white;
+    color: #994d51;
+    font-weight: 700;
+    font-size: 1.8rem;
+    padding: 24px 0;
+    border-radius: 15px;
+    border: 3px solid #994d51;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgb(153 77 81 / 0.25);
+    user-select: none;
+}
+
+.blood-group-btn:hover,
+.blood-group-btn:focus {
+    background-color: #7e3f43;
+    color: white;
+    border-color: #7e3f43;
+    outline: none;
+    box-shadow: 0 8px 16px rgb(126 63 67 / 0.6);
+}
+
+/* Middle Info Section */
+.mid-section {
+    background-color: #f9f4f4;
+    padding: 60px 20px;
+}
+
+.mid-section .mid-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+}
+
+.mid-section .mid-text {
+    max-width: 500px;
+}
+
+.mid-section h2 {
+    color: #994d51;
+    font-weight: 700;
+    font-size:26px;
+    margin-bottom: 20px;
+}
+
+.mid-section p {
+    font-size:16px;
+    margin-bottom: 15px;
+    line-height: 22px;
+}
+
+.mid-section img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Blood Inventory Section */
+.inventory-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.inventory-section h2 {
+    color: #994d51;
+    font-weight: 700;
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+}
+
+.inventory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.inventory-btn {
+    background-color: #fff;
+    border: 3px solid #994d51;
+    color: #994d51;
+    padding: 20px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 120px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(153, 77, 81, 0.25);
+}
+
+.inventory-btn.available {
+    background-color: #198754;
+    color: white;
+    border-color: #198754;
+}
+
+.inventory-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
