@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $_SESSION["loggedin"] = true;
                 $_SESSION["email"] = $user["email"];
                 $_SESSION["username"] = $user["username"];
-                header("Location: homepage.php");
+                header("Location: index.php");
                 exit();
 
             } else {

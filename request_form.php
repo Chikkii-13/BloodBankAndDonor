@@ -76,7 +76,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <button type="submit" class="btn btn-donate w-100">Submit Request</button>
             </form>
         </div>
-        <a href="homepage.php" class="btn mt-3">Back to Homepage</a>
+        <a href="index.php" class="btn mt-3">Back to Homepage</a>
     </div>
 </div>
 

@@ -114,7 +114,7 @@ $conn->close();
                 <button type="submit" class="btn btn-donate w-100">Submit Donation</button>
             </form>
         </div>
-        <a href="homepage.php" class="btn">Back to Homepage</a>
+        <a href="index.php" class="btn">Back to Homepage</a>
     </div>
 </div>
 
